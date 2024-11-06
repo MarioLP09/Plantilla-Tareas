@@ -1,0 +1,202 @@
+\usepackage{titlesec}
+\usepackage[many]{tcolorbox}
+
+% Adjust spacing after the chapter title
+\titlespacing*{\chapter}{0cm}{-2.0cm}{0.50cm}
+\titlespacing*{\section}{0cm}{0.50cm}{0.25cm}
+
+% Indent 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1ex}
+
+% Entorno Azul
+\newtcbtheorem[]{blueenv}{ajul}%
+    {colback=blueprop!10,
+    enhanced,
+    fonttitle=\bfseries,
+    attach boxed title to top left={xshift=-4mm},
+    toprule=0pt,
+    bottomrule=0pt,
+    rightrule=0pt,
+    leftrule=3pt,
+    arc=0mm,
+    skin=enhancedlast jigsaw,
+    sharp corners,
+    colframe=blueprop,
+    colbacktitle=blueprop!40,
+    boxed title style={
+        frame code={
+            \fill[blueprop!40](frame.south west)--(frame.north west)--(frame.north east)--([xshift=3mm]frame.east)--(frame.south east)--cycle;
+            \draw[line width=1mm,blueprop]([xshift=2mm]frame.north east)--([xshift=5mm]frame.east)--([xshift=2mm]frame.south east);
+            \fill[blueprop!60](frame.south west)--+(4mm,-2mm)--+(4mm,2mm)--cycle;
+        }
+    }
+    }{blueenv}
+
+% Entorno Naranja
+\newtcbtheorem[]{orangenv}{naranja}%
+    {colback=orange!10,
+    enhanced,
+    fonttitle=\bfseries,
+    attach boxed title to top left={xshift=-4mm},
+    toprule=0pt,
+    bottomrule=0pt,
+    rightrule=0pt,
+    leftrule=3pt,
+    arc=0mm,
+    skin=enhancedlast jigsaw,
+    sharp corners,
+    colframe=orange,
+    colbacktitle=orange!40,
+    boxed title style={
+        frame code={
+            \fill[orange!40](frame.south west)--(frame.north west)--(frame.north east)--([xshift=3mm]frame.east)--(frame.south east)--cycle;
+            \draw[line width=1mm,orange]([xshift=2mm]frame.north east)--([xshift=5mm]frame.east)--([xshift=2mm]frame.south east);
+            \fill[orange!60](frame.south west)--+(4mm,-2mm)--+(4mm,2mm)--cycle;
+        }
+    }
+    }{orangenv}
+
+% Entorno Verde
+\newtcbtheorem[]{greenenv}{verde}%
+    {colback=green!10,
+    enhanced,
+    fonttitle=\bfseries,
+    attach boxed title to top left={xshift=-4mm},
+    toprule=0pt,
+    bottomrule=0pt,
+    rightrule=0pt,
+    leftrule=3pt,
+    arc=0mm,
+    skin=enhancedlast jigsaw,
+    sharp corners,
+    colframe=green,
+    colbacktitle=green!40,
+    boxed title style={
+        frame code={
+            \fill[green!40](frame.south west)--(frame.north west)--(frame.north east)--([xshift=3mm]frame.east)--(frame.south east)--cycle;
+            \draw[line width=1mm,green]([xshift=2mm]frame.north east)--([xshift=5mm]frame.east)--([xshift=2mm]frame.south east);
+            \fill[green!60](frame.south west)--+(4mm,-2mm)--+(4mm,2mm)--cycle;
+        }
+    }
+    }{greenenv}
+
+% Entorno Morado
+\newtcbtheorem[]{purpleenv}{morado}%
+    {colback=purple!10,
+    enhanced,
+    fonttitle=\bfseries,
+    attach boxed title to top left={xshift=-4mm},
+    toprule=0pt,
+    bottomrule=0pt,
+    rightrule=0pt,
+    leftrule=3pt,
+    arc=0mm,
+    skin=enhancedlast jigsaw,
+    sharp corners,
+    colframe=purple,
+    colbacktitle=purple!40,
+    boxed title style={
+        frame code={
+            \fill[purple!40](frame.south west)--(frame.north west)--(frame.north east)--([xshift=3mm]frame.east)--(frame.south east)--cycle;
+            \draw[line width=1mm,purple]([xshift=2mm]frame.north east)--([xshift=5mm]frame.east)--([xshift=2mm]frame.south east);
+            \fill[purple!60](frame.south west)--+(4mm,-2mm)--+(4mm,2mm)--cycle;
+        }
+    }
+    }{purpleenv}
+
+% Entorno Escala de grises
+\newtcbtheorem[]{grayenv}{gris}%
+    {colback=graybg,
+    enhanced,
+    fonttitle=\bfseries,
+    attach boxed title to top left={xshift=-4mm},
+    toprule=0pt,
+    bottomrule=0pt,
+    rightrule=0pt,
+    leftrule=3pt,
+    arc=0mm,
+    skin=enhancedlast jigsaw,
+    sharp corners,
+    colframe=black,
+    colbacktitle=gray,
+    boxed title style={
+        frame code={
+            \fill[gray](frame.south west)--(frame.north west)--(frame.north east)--([xshift=3mm]frame.east)--(frame.south east)--cycle;
+            \draw[line width=1mm,gray]([xshift=2mm]frame.north east)--([xshift=5mm]frame.east)--([xshift=2mm]frame.south east);
+            \fill[gray!60](frame.south west)--+(4mm,-2mm)--+(4mm,2mm)--cycle;
+        }
+    }
+    }{gayenv}
+
+% Entorno Rojo Carmesí
+\newtcbtheorem[]{redenvironment}{carmesi}%
+    {colback=red!10,
+    enhanced,
+    fonttitle=\bfseries,
+    attach boxed title to top left={xshift=-4mm},
+    toprule=0pt,
+    bottomrule=0pt,
+    rightrule=0pt,
+    leftrule=3pt,
+    arc=0mm,
+    skin=enhancedlast jigsaw,
+    sharp corners,
+    colframe=red,
+    colbacktitle=red!40,
+    boxed title style={
+        frame code={
+            \fill[red!40](frame.south west)--(frame.north west)--(frame.north east)--([xshift=3mm]frame.east)--(frame.south east)--cycle;
+            \draw[line width=1mm,red]([xshift=2mm]frame.north east)--([xshift=5mm]frame.east)--([xshift=2mm]frame.south east);
+            \fill[red!60](frame.south west)--+(4mm,-2mm)--+(4mm,2mm)--cycle;
+        }
+    }
+    }{redenvironment}
+
+% Entorno Amarillo Pastel Claro
+\newtcbtheorem[]{yellowenvironment}{pastelamarillo}%
+    {colback=yellow!10,
+    enhanced,
+    fonttitle=\bfseries,
+    attach boxed title to top left={xshift=-4mm},
+    toprule=0pt,
+    bottomrule=0pt,
+    rightrule=0pt,
+    leftrule=3pt,
+    arc=0mm,
+    skin=enhancedlast jigsaw,
+    sharp corners,
+    colframe=yellow,
+    colbacktitle=yellow!40,
+    boxed title style={
+        frame code={
+            \fill[yellow!40](frame.south west)--(frame.north west)--(frame.north east)--([xshift=3mm]frame.east)--(frame.south east)--cycle;
+            \draw[line width=1mm,yellow]([xshift=2mm]frame.north east)--([xshift=5mm]frame.east)--([xshift=2mm]frame.south east);
+            \fill[yellow!60](frame.south west)--+(4mm,-2mm)--+(4mm,2mm)--cycle;
+        }
+    }
+    }{yellowenvironment}
+
+% Entorno Rosa Claro
+\newtcbtheorem[]{pinkenvironment}{clarorosa}%
+    {colback=pink!10,
+    enhanced,
+    fonttitle=\bfseries,
+    attach boxed title to top left={xshift=-4mm},
+    toprule=0pt,
+    bottomrule=0pt,
+    rightrule=0pt,
+    leftrule=3pt,
+    arc=0mm,
+    skin=enhancedlast jigsaw,
+    sharp corners,
+    colframe=pink,
+    colbacktitle=pink!40,
+    boxed title style={
+        frame code={
+            \fill[pink!40](frame.south west)--(frame.north west)--(frame.north east)--([xshift=3mm]frame.east)--(frame.south east)--cycle;
+            \draw[line width=1mm,pink]([xshift=2mm]frame.north east)--([xshift=5mm]frame.east)--([xshift=2mm]frame.south east);
+            \fill[pink!60](frame.south west)--+(4mm,-2mm)--+(4mm,2mm)--cycle;
+        }
+    }
+    }{pinkenvironment}
